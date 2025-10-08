@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+body{
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: var(--md-sys-color-background);
+}
+
+body p{
+    color: var(--md-sys-color-on-background);
+}
+
+a{
+    text-decoration: none;
+    color: var(--md-sys-color-on-background);
+}
+
+#header{
+    display: flex;
+    justify-content:space-between;
+    background-color: var(--md-sys-color-secondary-container);
+    padding: 5px 25px 5px 25px;
+    height: 50px;
+    border-radius: 0 0 25px 25px;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 3;
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.5);
+}
+
+#side_header{
+    position: fixed;
+    justify-content:space-between;
+    background-color: var(--md-sys-color-primary-container);
+    border-radius: 0 25px 25px 0;
+    top: 75px;
+    height: calc(100% - 100px); /* Intelij taught me something very cool */
+    width: 275px;
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.5);
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+#logo{
+    display: flex;
+    padding: auto;
+}
+
+.side_logo_header{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.side_logo_header p{
+    width: 100%;
+}
+
+#logo_image{
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    padding-top: 4px;
+}
+
+#side_logo{
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    padding: 0 10px;
+
+}
+
+#logo h1{
+    margin: auto;
+    color: var(--md-sys-color-on-secondary-container);
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+nav ul li{
+    float: left;
+    padding: 0 2px 0 2px;
+}
+
+#side_header nav ul li{
+    float: none;
+    margin: 0 10px 5px 10px;
+}
+
+nav ul li a {
+  display: block;
+  color: var(--md-sys-color-on-secondary-container);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: auto;
+  border-radius: 50px;
+  border: 1px solid gray;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.selected{
+  background-color: var(--md-sys-color-primary);
+  opacity: 0.75;
+  color: var(--md-sys-color-on-primary);
+  transition: opacity 0.3s;
+}
+
+nav ul li a:hover {
+  display: flex;
+  background-color: var(--md-sys-color-primary);
+  opacity: 1;
+  color: var(--md-sys-color-on-primary);
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  
+}
+
+article{
+    position: fixed ;
+    bottom: 0;
+    left: 300px;
+    right: 10px;
+    top: 75px;
+    border-radius: 25px 25px 0 0;
+    background-color: var(--md-sys-color-surface-container);
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.5);
+    overflow-y: auto;
+}
+
+
+footer{
+    font-size: 10px;
+    font-weight:lighter;
+    display: flex;
+    margin: auto;
+    padding: 5px 15px;
+    justify-content:space-between;
+    background-color: var(--md-sys-color-tertiary-container);
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    width: 50%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.5);
+}
+
+footer p{
+    color: var(--md-sys-color-on-tertiary-container)
+}
+
+@media (max-width: 768px) {
+    .not_important {
+        display: none;
+    }
+    #side_header {
+        width: 100px;
+    }
+    article {
+        left: 125px;
+    }
+}
+
+/* Dark theme colors */
+.dark {
+  --md-sys-color-primary: rgb(150 213 167);
+  --md-sys-color-surface-tint: rgb(150 213 167);
+  --md-sys-color-on-primary: rgb(0 57 28);
+  --md-sys-color-primary-container: rgb(17 81 46);
+  --md-sys-color-on-primary-container: rgb(177 241 193);
+  --md-sys-color-secondary: rgb(182 204 185);
+  --md-sys-color-on-secondary: rgb(34 53 39);
+  --md-sys-color-secondary-container: rgb(56 75 60);
+  --md-sys-color-on-secondary-container: rgb(210 232 212);
+  --md-sys-color-tertiary: rgb(162 206 218);
+  --md-sys-color-on-tertiary: rgb(2 54 64);
+  --md-sys-color-tertiary-container: rgb(33 76 87);
+  --md-sys-color-on-tertiary-container: rgb(190 234 246);
+  --md-sys-color-error: rgb(255 180 171);
+  --md-sys-color-on-error: rgb(105 0 5);
+  --md-sys-color-error-container: rgb(147 0 10);
+  --md-sys-color-on-error-container: rgb(255 218 214);
+  --md-sys-color-background: rgb(16 21 16);
+  --md-sys-color-on-background: rgb(223 228 220);
+  --md-sys-color-surface: rgb(16 21 16);
+  --md-sys-color-on-surface: rgb(223 228 220);
+  --md-sys-color-surface-variant: rgb(65 73 66);
+  --md-sys-color-on-surface-variant: rgb(192 201 191);
+  --md-sys-color-outline: rgb(139 147 138);
+  --md-sys-color-outline-variant: rgb(65 73 66);
+  --md-sys-color-shadow: rgb(0 0 0);
+  --md-sys-color-scrim: rgb(0 0 0);
+  --md-sys-color-inverse-surface: rgb(223 228 220);
+  --md-sys-color-inverse-on-surface: rgb(44 50 45);
+  --md-sys-color-inverse-primary: rgb(46 106 68);
+  --md-sys-color-primary-fixed: rgb(177 241 193);
+  --md-sys-color-on-primary-fixed: rgb(0 33 14);
+  --md-sys-color-primary-fixed-dim: rgb(150 213 167);
+  --md-sys-color-on-primary-fixed-variant: rgb(17 81 46);
+  --md-sys-color-secondary-fixed: rgb(210 232 212);
+  --md-sys-color-on-secondary-fixed: rgb(13 31 19);
+  --md-sys-color-secondary-fixed-dim: rgb(182 204 185);
+  --md-sys-color-on-secondary-fixed-variant: rgb(56 75 60);
+  --md-sys-color-tertiary-fixed: rgb(190 234 246);
+  --md-sys-color-on-tertiary-fixed: rgb(0 31 38);
+  --md-sys-color-tertiary-fixed-dim: rgb(162 206 218);
+  --md-sys-color-on-tertiary-fixed-variant: rgb(33 76 87);
+  --md-sys-color-surface-dim: rgb(16 21 16);
+  --md-sys-color-surface-bright: rgb(53 58 53);
+  --md-sys-color-surface-container-lowest: rgb(10 15 11);
+  --md-sys-color-surface-container-low: rgb(24 29 24);
+  --md-sys-color-surface-container: rgb(28 33 28);
+  --md-sys-color-surface-container-high: rgb(38 43 39);
+  --md-sys-color-surface-container-highest: rgb(49 54 49);
+}
