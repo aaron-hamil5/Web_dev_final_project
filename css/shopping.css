@@ -26,6 +26,7 @@ header h2{
     margin: 0;
     font-size: 50px;
     margin-left: 10px;
+    color: var(--md-sys-color-on-tertiary-container);
 }
 header p{
     padding: 5px 0 0 0;
@@ -33,6 +34,7 @@ header p{
     font-size: 50px;
     margin-left: 10px;
     font-weight: 100;
+    color: var(--md-sys-color-on-tertiary-container);
 }
 hr{
     position: sticky;
@@ -45,17 +47,20 @@ hr{
     z-index: 1;
 }
 
+
 h3{
     margin: 0;
     padding: 25px 0 0 10px;
     font-weight: 100;
     font-size: 75px;
+    color: var(--md-sys-color-on-tertiary-container);
 }
 
 article ul{
     list-style-type: none;
     display: flex;
     overflow-y: auto;
+    padding-right: 350px;
 }
 
 article ul li{
@@ -118,6 +123,46 @@ article ul li{
 .button:hover {
   opacity: 1;
 }
+
+
+#basket{
+    position: fixed;
+    right: 20px;
+    top: 200px;
+    width: 300px;
+    height: calc(100% - 200px);
+    border-radius: 25px 25px 0 0;
+    background-color: var(--md-sys-color-tertiary-container);
+    overflow: hidden;
+    z-index: 3;
+}
+
+.basket_header{
+    height: 50px;
+    margin: 15px 20px 0px 20px;
+    padding: 0;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--md-sys-color-tertiary-container);
+    align-items: center;
+}
+
+.basket_header img{
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+
+h4{
+    margin: 0 auto;
+    font-weight: 100;
+    font-size: 40px;
+    color: var(--md-sys-color-on-tertiary-container);
+}
+
 
 .light {
   --md-sys-color-primary: rgb(143 74 80);
