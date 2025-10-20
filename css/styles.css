@@ -97,7 +97,7 @@ nav ul li{
     margin: 0 10px 5px 10px;
 }
 
-nav ul li a, .button {
+nav ul li a {
   display: block;
   color: var(--md-sys-color-on-secondary-container);
   text-align: center;
@@ -116,7 +116,7 @@ nav ul li a, .button {
   transition: opacity 0.3s;
 }
 
-nav ul li a:hover, .button:hover {
+nav ul li a:hover{
   display: flex;
   background-color: var(--md-sys-color-primary);
   opacity: 1;

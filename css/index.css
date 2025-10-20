@@ -160,6 +160,29 @@ article p{
     margin-top: 250px;
 }
 
+.button {
+  display: block;
+  color: var(--md-sys-color-on-secondary-container);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: auto;
+  border-radius: 50px;
+  border: 1px solid gray;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  display: flex;
+  background-color: var(--md-sys-color-primary);
+  opacity: 1;
+  color: var(--md-sys-color-on-primary);
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+
+}
+
 #link_tree li{
     margin: 0 0 10px 0;
 }

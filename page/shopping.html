@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="../css/shopping.css"> <!-- ADD CUSTOM CSS OF THIS PAGE -->
+        <script src="/javascript/shopping.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Uniq Coffee Web"> <!-- UPDATE THIS SECTION TO REFLECT PAGE -->
@@ -77,7 +78,7 @@
                     </div>
                     <p class="coffee_title">Espresso</p>
                     <p class="price_text">$2.15</p>
-                    <a class="button">Add to Cart</a>
+                    <a class="button" onclick="addToBasket('../images/coffee/espresso.webp', 'Espresso', 2.15)">Add to Cart</a>
                 </li>
                 <li>
                     <div class="coffee_image">
@@ -220,6 +221,23 @@
                     <img src="../images/logo/shopping_cart_logo.webp" alt="">
                     <h4>Basket</h4>
                 </header>
+                <div id="order_type_box">
+                    <p>Order Type: Click+Collect</p>
+                </div>
+                <main id="basket_area">
+                    <script>
+                        function updateBasketArea() {
+                            const basketArea = document.getElementById('basket_area');
+                            
+                        }
+
+                    </script>
+                </main>
+                <div id="basket_footer">
+                    <hr>
+                    <h4 id="total_price">Total: $0.00</h4>
+                    <a class="checkout_button">Checkout</a>
+                </div>
             </aside>
         </article>
 
