@@ -183,23 +183,43 @@ h4{
 #basket_area{
     margin: 15px;
     height: calc(100% - 250px);
+    overflow-y: scroll;
 }
 
 .basket_item{
     height: 100px;
     width: 100%;
-    background-color: var(--md-sys-color-surface-container);
+    background-color: var(--md-sys-color-primary);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
+.basket_item_decaf{
+    height: 100px;
+    width: 100%;
+    background-color: var(--md-sys-color-secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.basket_item h4, .basket_item_decaf h4{
+    font-size: 25px;
+    color: var(--md-sys-color-on-primary);
+}
+
 .basket_item_image{
     height: 90px;
     width: 90px;
     border-radius: 10px;
     background-color: var(--md-sys-color-surface);
+    margin-left: 5px;
 }
 
 .basket_item_details{
@@ -213,6 +233,10 @@ h4{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.info_landscape p{
+    color: var(--md-sys-color-on-primary);
 }
 
 
