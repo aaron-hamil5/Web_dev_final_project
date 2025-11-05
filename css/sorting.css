@@ -7,7 +7,7 @@ article{
     background-color: var(--md-sys-color-primary-container);
     border-radius: 20px ;
     padding: 15px 15px 25px 15px;
-    margin-right: 5px;
+    margin: 0 5px 10px 5px;
 }
 input{
     margin: 0 0 20px 0;
@@ -31,6 +31,7 @@ table{
 }
 
 h2{
+    color: var(--md-sys-color-on-primary-container);
     padding: 0;
     margin: 0;
 }
@@ -60,4 +61,10 @@ tr:nth-child(odd) {
     font-weight: 200;
     background-color: var(--md-sys-color-primary);
     color: var(--md-sys-color-on-primary);
+}
+
+@media (max-width: 900px) {
+    article{
+        flex-direction: column;
+    }
 }
