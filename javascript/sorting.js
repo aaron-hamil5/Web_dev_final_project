@@ -1,7 +1,8 @@
 let customerArray = [];
+let highestIncome = true;
+let highestDOB = true;
 
-
-function displayCustomerData(){
+function DisplayCustomerData(){
     const customerTable = document.getElementById("customer_table");
 
     customerTable.innerHTML = (`
@@ -33,5 +34,39 @@ function InputCustomerData(
             _customerDOB: customerDOB,
             _customerIncome: customerIncome,
         });
-    displayCustomerData();
+    DisplayCustomerData();
+}
+
+function SortIncome() {
+    if (highestIncome) {
+        document.getElementById("income").textContent = "Income: Low to High"
+        customerArray.sort(function (a, b) {
+            return b._customerIncome - a._customerIncome; //Highest First
+        });
+        highestIncome = !highestIncome
+    } else {
+        document.getElementById("income").textContent = "Income: High to Low"
+        customerArray.sort(function (a, b) {
+            return a._customerIncome - b._customerIncome; //LowestFirst
+        })
+        highestIncome = !highestIncome
+    }
+    DisplayCustomerData();
+}
+
+function SortDOB() {
+    if (highestDOB) {
+        document.getElementById("dob").textContent = "DOB: Low to High"
+        customerArray.sort(function (a, b) {
+            return new Date(b._customerDOB) - new Date(a._customerDOB); //Highest First
+        });
+        highestDOB = !highestDOB
+    } else {
+        document.getElementById("dob").textContent = "DOB: High to Low"
+        customerArray.sort(function (a, b) {
+            return new Date(a._customerDOB) - new Date(b._customerDOB); //LowestFirst
+        })
+        highestDOB = !highestDOB
+    }
+    DisplayCustomerData();
 }

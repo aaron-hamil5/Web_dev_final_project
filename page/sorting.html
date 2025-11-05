@@ -68,9 +68,9 @@
                 <h2>Customer Date Of Birth</h2>
                 <input id="customer_dob" type="date" placeholder="John Doe">
                 <h2>Customer Income</h2>
-                <input id="customer_Income" type="number" placeholder="12500">
+                <input id="customer_income" type="number" placeholder="12500">
                 <br>
-                <a class="button" onclick="InputCustomerData(customer_name.value, customer_dob.value, customer_age.value)">Add Customer</a>
+                <a class="button" onclick="InputCustomerData(customer_name.value, customer_dob.value, customer_income.value)">Add Customer</a>
             </div>
             <div class="right_side">
                 <h2>Here you go:</h2>
@@ -81,6 +81,8 @@
                         <th>Date Of Birth</th>
                     </tr>
                 </table>
+                <a id="income" class="button" onclick="SortIncome()">Income: High to Low</a>
+                <a id="dob" class="button" onclick="SortDOB()">DOB: High to Low</a>
             </div>
         </article>
 
