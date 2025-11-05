@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="../javascript/sorting.js"></script>
         <link rel="stylesheet" href="../css/styles.css">
-        <link rel="stylesheet" href="../css/styles.css"> <!-- ADD CUSTOM CSS OF THIS PAGE -->
+        <link rel="stylesheet" href="../css/sorting.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Web Development Final Project Submission"> <!-- UPDATE THIS SECTION TO REFLECT PAGE -->
-        <title>Aaron's Final Project</title> <!-- UPDATE THIS SECTION TO REFLECT PAGE -->
+        <meta name="description" content="Taking in user data and then adding it to a table with sorting abilities"> <!-- UPDATE THIS SECTION TO REFLECT PAGE -->
     </head>
     <body class="dark">
         <header id="header">
@@ -62,7 +62,26 @@
         </aside>
 
         <article>
-            <!-- ADD CONTENT FOR THIS PAGE HERE -->
+            <div class="left_side">
+                <h2>Customer Name</h2>
+                <input id="customer_name" type="text" placeholder="John Doe">
+                <h2>Customer Date Of Birth</h2>
+                <input id="customer_dob" type="date" placeholder="John Doe">
+                <h2>Customer Income</h2>
+                <input id="customer_Income" type="number" placeholder="12500">
+                <br>
+                <a class="button" onclick="InputCustomerData(customer_name.value, customer_dob.value, customer_age.value)">Add Customer</a>
+            </div>
+            <div class="right_side">
+                <h2>Here you go:</h2>
+                <table id="customer_table">
+                    <tr class="table_title_bar">
+                        <th>Name</th>
+                        <th>Income</th>
+                        <th>Date Of Birth</th>
+                    </tr>
+                </table>
+            </div>
         </article>
 
         <footer>
