@@ -39,13 +39,15 @@ function InputCustomerData(
         if (customerIncome == ""){
             customerIncome = prompt("What is their income?", "125000")
         }
-        customerArray.push(
-            {
-                _customerName: customerName,
-                _customerDOB: customerDOB,
-                _customerIncome: customerIncome,
-            });
-        DisplayCustomerData();
+        if (customerName != "" && customerDOB != "" && customerIncome != ""){
+            customerArray.push(
+                {
+                    _customerName: customerName,
+                    _customerDOB: customerDOB,
+                    _customerIncome: customerIncome,
+                });
+            DisplayCustomerData();
+        }
     } else {
         customerArray.push(
             {
