@@ -28,13 +28,33 @@ function InputCustomerData(
     customerDOB,
     customerIncome
 ){
-    customerArray.push(
-        {
-            _customerName: customerName,
-            _customerDOB: customerDOB,
-            _customerIncome: customerIncome,
-        });
-    DisplayCustomerData();
+    if (customerName == "" || customerDOB == "" || customerIncome == ""){
+        alert("Woops, you forgot something!")
+        if (customerName == ""){
+            customerName = prompt("What is the name?", "John Doe");
+        }
+        if (customerDOB == ""){
+            customerDOB = prompt("What is their date of birth?", "YYYY/MM/DD");
+        }
+        if (customerIncome == ""){
+            customerIncome = prompt("What is their income?", "125000")
+        }
+        customerArray.push(
+            {
+                _customerName: customerName,
+                _customerDOB: customerDOB,
+                _customerIncome: customerIncome,
+            });
+        DisplayCustomerData();
+    } else {
+        customerArray.push(
+            {
+                _customerName: customerName,
+                _customerDOB: customerDOB,
+                _customerIncome: customerIncome,
+            });
+        DisplayCustomerData();
+    }
 }
 
 function SortIncome() {
