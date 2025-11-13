@@ -3,6 +3,7 @@ h2{
     margin: 0;
     padding: 0;
     color: var(--md-sys-color-secondary);
+    transition: color 0.3s;
 }
 
 h3{
@@ -10,6 +11,7 @@ h3{
     margin: 20px 0 0 0;
     padding: 0;
     color: var(--md-sys-color-primary);
+    transition: color 0.3s;
 }
 
 article p{
@@ -17,6 +19,7 @@ article p{
     margin: 0;
     padding: 0;
     color: var(--md-sys-color-secondary);
+    transition: color 0.3s;
 
 }
 
@@ -37,6 +40,7 @@ article p{
 
 #business_card_front{
     background-color: var(--md-sys-color-tertiary-container);
+    transition: background-color 0.3s;
 }
 
 
@@ -51,7 +55,8 @@ article p{
 
 #business_card_back {
     transform: rotateY(180deg);
-    background-color: var(--md-sys-color-tertiary-container); /*Visibly see the change*/
+    background-color: var(--md-sys-color-tertiary-container);
+    transition: background-color 0.3s;
 }
 
 .business_card:hover {
@@ -79,6 +84,7 @@ article p{
 #card_title_back h4{
     color: var(--md-sys-color-tertiary);
     font-weight: 500;
+    transition: color 0.3s;
 }
 
 #card_background img, #card_background_back img{
@@ -119,6 +125,7 @@ article p{
     padding: 0;
     color: var(--md-sys-color-on-tertiary-container);
     text-align: center;
+    transition: color 0.3s;
 }
 
 .business_card p{
@@ -128,6 +135,7 @@ article p{
     padding: 0;
     color: var(--md-sys-color-on-secondary-fixed);
     text-align: center;
+    transition: color 0.3s;
 }
 
 .business_card ul{
@@ -180,7 +188,6 @@ article p{
   text-align: center;
   text-decoration: none;
   margin: auto;
-
 }
 
 #link_tree li{
