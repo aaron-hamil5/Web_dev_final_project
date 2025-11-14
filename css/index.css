@@ -1,3 +1,7 @@
+.left_side, .right_side{
+    background-color: transparent;
+}
+
 h2{
     font-size: 4em;
     margin: 0;
@@ -12,6 +16,14 @@ h3{
     padding: 0;
     color: var(--md-sys-color-primary);
     transition: color 0.3s;
+}
+.flex_div{
+    display: flex;
+}
+@media (max-width: 1500px) {
+    .flex_div{
+        flex-direction: column;
+    }
 }
 
 article p{

@@ -1,27 +1,10 @@
 article{
     display: flex;
 }
-.left_side{
-    width: 100%;
-    height:fit-content;
-    background-color: var(--md-sys-color-primary-container);
-    border-radius: 20px ;
-    padding: 15px 15px 25px 15px;
-    margin: 0 5px 10px 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-input{
-    margin: 0 0 20px 0;
-    padding: 0;
-}
-.right_side{
-    width: 100%;
-    height:fit-content;
-    border-radius: 20px ;
-    background-color: var(--md-sys-color-tertiary-container);
-    padding: 15px;
-    margin-left: 5px;
-    transition: background-color 0.3s, color 0.3s;
+@media (max-width: 1500px) {
+    article{
+        flex-direction: column;
+    }
 }
 
 table{
