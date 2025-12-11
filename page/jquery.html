@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <script src="../javascript/toggle_theme.js"></script>
+        <script src="../javascript/jquery/jquery.js"></script>
+        <script src="../javascript/mini_quizzit.js"></script>
+        <link rel="stylesheet" href="../css/material_design.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/jquery.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Web Development Final Project Submission">
+        <title>jQuery Showcase</title>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+        <script>
+            $( function() {
+                $( "#accordion_main" ).accordion();
+                $( "#accordion_mini" ).accordion();
+                $( "#sortable" ).sortable();
+                $( document ).tooltip();
+            } );
+        </script>
+
+    </head>
+    <body onload="setTheme()">
+        <header id="header">
+            <a href="../index.html">
+                <div id="logo">
+                    <img id="logo_image" src="../images/logo.webp" alt="Web Logo">
+                    <h1 class="not_important">Final Project</h1>
+                </div>
+            </a>
+
+            <nav>
+                <ul>
+                    <li class="not_important"><a class="selected" href="../index.html">Home</a></li>
+                    <li><a href="https://www.uniqstudio.org/">Uniq Studio</a></li>
+                    <li><a href="mailto:aaron.hamil5@gmail.com">Contact</a></li>
+                    <li><img id="theme_toggle" src="../images/ui/dark_mode.webp" alt="Dark Mode Toggle" onclick="toggleTheme()"></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside id="side_header"> <!-- ADD SELECTED CLASS TO REFLECT CURRENT PAGE -->
+            <div class="side_logo_header">
+                <img class="side_logo" src="../images/logo.webp" alt="Web Logo">
+                <p class="not_important">- Areas of topics</p>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="side_logo_header" href="../page/shopping.html">
+                            <img class="side_logo" src="../images/logo/shopping_cart_logo.webp" alt="Shopping Cart Logo">
+                            <p class="not_important">Dynamic Shopping Cart</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="side_logo_header" href="../page/processing.html">
+                            <img class="side_logo" src="../images/logo/text_processing_logo.webp" alt="Text Processing Logo">
+                            <p class="not_important">Text Processing</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="side_logo_header selected" href="../page/jquery.html">
+                            <img class="side_logo" src="../images/logo/jquery_logo.webp" alt="jQuery Logo">
+                            <p class="not_important">jQuery UI Showcase</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="side_logo_header " href="../page/sorting.html">
+                            <img class="side_logo" src="../images/logo/sorting_logo.webp" alt="Sorting Logo">
+                            <p class="not_important">Sorting</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <article class="light">
+            <div id="accordion_main">
+                <h3> <img class="accordion_img" src="https://www.uniqstudio.org/images/logo_uniq.webp" alt="Uniq Studio Logo"> Uniq Studio Apps</h3>
+                <div>
+                    <div id="accordion_mini">
+                        <h3> <img class="accordion_img" src="https://www.uniqstudio.org/images/uniq_coffee_icon.webp" alt="Uniq Coffee Logo"> Uniq Coffee</h3>
+                        <div>
+                            <p>Meet Uniq Coffee, the simplified mobile app for buying your next caffeinated drink. Uniq Coffee streamlines the coffee ordering experience, starting with setting up your Uniq ID to save your data for quicker checkout. You then can start your order and quickly get to the payment screen. After 10 purchases, you get a free coffee on your next purchase!</p>
+                            <a class="button" title="Uniq Coffee APK will be downloaded through GitHub immediately." href="https://github.com/Uniq-Studio/Uniq-Coffee/releases/download/1.0/Uniq-Coffee.apk">Download Here</a>
+                        </div>
+                        <h3> <img class="accordion_img" src="https://www.uniqstudio.org/images/my_city_icon.webp" alt="My City Glasgow Logo"> My City - Glasgow</h3>
+                        <div>
+                            <p>Meet My City, the simple mobile app that helps you discover the best spots in Glasgow. Whether you're looking for a new café, restaurant, or park, My City makes exploring easy. Just choose what you want to do, and you'll get a curated list of places to visit—helping you uncover your next favourite spot in the city.</p>
+                            <a class="button" title="My City APK will be downloaded through GitHub immediately." href="https://github.com/Uniq-Studio/My-City/releases/download/1.0/my_city_gla.apk">Download Here</a>
+                        </div>
+                        <h3> <img class="accordion_img" src="https://www.uniqstudio.org/images/shifly_icon.webp" alt="Shifly Logo"> Shifly</h3>
+                        <div>
+                            <p>Meet Shifly [pronounced Shif-lee], the ultimate mobile app for Shift Managers, at McDonald's, designed to simplify your day and boost efficiency. Shifly streamlines your entire shift, starting with a user-friendly floorplan to effortlessly place your crew. It then creates a detailed, organized breaks list and a clear "Next In" screen, so you're always on top of staffing.</p>
+                            <a href="#" title="Project still in deep development."><p>Unavailable for Download</p></a>
+                        </div>
+                        <h3> <img class="accordion_img" src="https://www.uniqstudio.org/images/quizzit_logo.webp" alt="Quizzit Logo"> Quizzit</h3>
+                        <div>
+                            <p>Meet Quizzit, the best way to test your knowledge. Quizzit has a beautiful user interface designed to keep the player intrigued when playing. Download the project and change up the question and images and use it for testing people. Questions and answers have background to help remind the person of what the answer is.</p>
+                            <a class="button" title="Download Quizzit repository and follow deployment instructions." href="https://github.com/aaron-hamil5/Quizzit">Download Project</a>
+                        </div>
+                        <h3> <img class="accordion_img" src="https://www.uniqstudio.org/images/chattr_icon.webp" alt="Chattr Logo"> ChattR</h3>
+                        <div>
+                            <p>Meet Chattr, the best cloud solution for chatting internally your company. Deploy the app in your cloud environment and get to talking with your team. With the Uniq and material designed baked into the user interface, designed to be simple to use.</p>
+                            <a class="button" title="View ChattR on the Docker Hub Page." href="https://hub.docker.com/r/aaronhamil5/chattr">View on Docker Hub</a>
+                        </div>
+                    </div>
+                </div>
+                <h3> <img class="accordion_img" src="https://www.uniqstudio.org/images/quizzit_logo.webp" alt="Quizzit Logo"> Quizzit - Sort</h3>
+                <div>
+                    <div class="quizzit_title">
+                        <img class="accordion_img" src="https://www.uniqstudio.org/images/quizzit_logo.webp" alt="Quizzit Logo">
+                        <h4>Quizzit</h4>
+                    </div>
+                    <div id="quizzit_question">
+                    <p>Question: What is the best practice when designing and developing a websites.</p>
+                        <ul id="sortable">
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Create GitHub Repository.</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Comment HTML File.</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Create Plan.</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Create JavaScript File.</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Resize Window and Fix Errors.</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Scrap everything and use Squarespace.</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Create Wireframe.</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Test JavaScript Logic.</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Comment CSS File.</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Comment JavaScript File.</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Create HTML File.</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Create CSS File.</li>
+                        </ul>
+
+                        <p class="button" onclick="loadAnswer()">Check</p>
+                    </div>
+                    <div id="quizzit_answer">
+                        <p>
+                            (Unofficial) Answer:<br> <br>
+                            There will be no auto grading as how you want to get up is all down to each person. Happy Coding!
+                            <br> <br>
+                            Create Plan. <br>
+                            Create Wireframe. <br>
+                            Create GitHub Repository. <br>
+                            Create HTML File. <br>
+                            Comment HTML File. <br>
+                            Create CSS File. <br>
+                            Comment CSS File. <br>
+                            Resize Window and Fix Errors. <br>
+                            Create JavaScript File. <br>
+                            Comment JavaScript File. <br>
+                            Test JavaScript Logic. <br>
+                            Scrap everything and use Squarespace. <br>
+                        </p>
+                    </div>
+                </div>
+                <h3><img class="accordion_img" src="https://www.uniqstudio.org/images/chattr_icon.webp" alt="Chattr Logo"> Chattr - Hover Dialog</h3>
+                <div>
+                    <div class="quizzit_title">
+                        <img class="accordion_img" src="https://www.uniqstudio.org/images/chattr_icon.webp" alt="ChattR Logo">
+                        <h4>ChattR</h4>
+                    </div>
+                    <div id="tac">
+                        <p>By using this service, you agree and understand the <a href="#" title="You can view the full Terms and Conditions here on the Uniq Studio's Website">Terms and Conditions</a> of this software.</p>
+                        <input type="checkbox"  onchange="document.getElementById('agree').disabled = !this.checked; changeTitle();" />
+                        <a href="#" id="button_dialog" title="You must agree before proceeding to the login."><input type="submit" name="agree" class="inputButton" id="agree" value=" Login " onclick="loadChattR()" disabled /> </a>
+                    </div>
+
+                    <iframe src="https://www.uniqstudio.org/page/login.html" id="login_screen"></iframe>
+                </div>
+            </div>
+        </article>
+
+        <footer>
+            <p>B00869530</p> 
+            <p>First Attempt</p>
+            <p class="not_important">Developed By Aaron Hamilton</p>
+        </footer>
+    </body>
+</html>
