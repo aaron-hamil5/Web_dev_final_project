@@ -32,7 +32,7 @@ function addToBasket(image, name, price, decaf){
 }
 
 function removeFromBasket(item, price){
-    const basketItem = item.parentElement.parentElement.parentElement; //The button is 3 elements deep, yes its a inificent way. If it work lets never touch it again.
+    const basketItem = item.parentElement.parentElement.parentElement; //The button is 3 elements deep, yes it's an inefficient way. If it works lets never touch it again.
     basketItem.remove();
     updateTotal(false, price);
 }
@@ -50,6 +50,7 @@ function updateTotal(add, amount){
 }
 
 function checkout(){
+    alert(`Order placed!\n\nUniq Coffee Order:\nOrder Number is: unicof-2025-0924 \nYou paid: ` + total.toFixed(2) + `\n\nOnce arrived, please make yourself known to a barista to collect your order.\n\nSkip the queue quicker with the Uniq Coffee Android App, Available now.`)
     document.getElementById('total_price').innerHTML = 'Enjoy!';
     document.getElementById('basket_area').innerHTML = '';
     total = 0;
