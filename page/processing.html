@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="../javascript/toggle_theme.js"></script>
+    <link rel="stylesheet" href="../css/material_design.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css"> <!-- ADD CUSTOM CSS OF THIS PAGE -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Processing text"> <!-- UPDATE THIS SECTION TO REFLECT PAGE -->
+    <title>Processing Text</title> <!-- UPDATE THIS SECTION TO REFLECT PAGE -->
+</head>
+
+<body onload="setTheme()">
+    <header id="header">
+        <a href="../index.html">
+            <div id="logo">
+                <img id="logo_image" src="../images/logo.webp" alt="Web Logo">
+                <h1 class="not_important">Final Project</h1>
+            </div>
+        </a>
+
+        <nav>
+            <ul>
+                <li class="not_important"><a class="selected" href="../index.html">Home</a></li>
+                <li><a href="https://www.uniqstudio.org/">Uniq Studio</a></li>
+                <li><a href="mailto:aaron.hamil5@gmail.com">Contact</a></li>
+                <li><img id="theme_toggle" src="../images/ui/dark_mode.webp" alt="Dark Mode Toggle"
+                        onclick="toggleTheme()"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside id="side_header">
+        <div class="side_logo_header">
+            <img class="side_logo" src="../images/logo.webp" alt="Web Logo">
+            <p class="not_important">- Areas of topics</p>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a class="side_logo_header" href="../page/shopping.html">
+                        <img class="side_logo" src="../images/logo/shopping_cart_logo.webp" alt="Shopping Cart Logo">
+                        <p class="not_important">Dynamic Shopping Cart</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="side_logo_header selected" href="../page/processing.html">
+                        <img class="side_logo" src="../images/logo/text_processing_logo.webp"
+                            alt="Text Processing Logo">
+                        <p class="not_important side_selected">Text Processing</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="side_logo_header" href="../page/jquery.html">
+                        <img class="side_logo" src="../images/logo/jquery_logo.webp" alt="jQuery Logo">
+                        <p class="not_important">jQuery UI Showcase</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="side_logo_header" href="../page/sorting.html">
+                        <img class="side_logo" src="../images/logo/sorting_logo.webp" alt="Sorting Logo">
+                        <p class="not_important">Sorting</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <article>
+        <h2>Processing Text</h2>
+        <p>Type in a paragraph. It <em>must</em> contain the following word: <em>uws</em></p>
+        <p>Hit process to cound how many spaces there are to the last 'uws' in the paragraph.</p>
+        <textarea id="paragraph" rows="10" cols="105"></textarea>
+        <br>
+        <br>
+        <p class="button" onclick="processText()">Process Text</p>
+        <p id="result"></p>
+    </article>
+
+    <footer>
+        <p>B00869530</p>
+        <p>First Attempt</p>
+        <p class="not_important">Developed By Aaron Hamilton</p>
+    </footer>
+</body>
+
+</html>
