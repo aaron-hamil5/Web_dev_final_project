@@ -102,6 +102,17 @@ nav ul li{
     float: none;
     margin: 0 10px 5px 10px;
 }
+#side_header nav ul li:hover p{
+    color: var(--md-sys-color-on-primary);
+}
+
+#side_header nav ul li p{
+    color: var(--md-sys-color-on-primary-container);
+}
+#side_header nav ul li p.side_selected{
+    color: var(--md-sys-color-on-primary);
+}
+
 
 nav ul li a {
   display: block;
