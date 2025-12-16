@@ -1,7 +1,7 @@
 #pop_up_message {
     position: fixed;
     width: 60%;
-    height: 200px;
+    height: auto;
     z-index: 999;
     margin: 50px 20% 0 20%;
     background: var(--md-sys-color-tertiary);
@@ -9,6 +9,7 @@
     box-shadow: 0 0 10px rgba(100, 100, 100, 0.5);
     border-radius: 15px;
 }
+
 
 .pop_title_bar {
     display: flex;
@@ -251,4 +252,6 @@ article p {
     h2 {
         font-size: 2em;
     }
+
+
 }
